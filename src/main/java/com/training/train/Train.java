@@ -80,8 +80,8 @@ final class Train
         .findFirst()
         .ifPresent(cargo ->
         {
-          currentIndex = compartments.indexOf(cargo);
-          ((CargoCompartment) compartments.get(currentIndex++)).fill();
+          ((CargoCompartment)cargo).fill();
+          currentIndex = compartments.indexOf(cargo) + 1;
         });
     
     return previousCurrentIndex != currentIndex;
