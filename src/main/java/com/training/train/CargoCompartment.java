@@ -11,9 +11,9 @@ final class CargoCompartment extends Compartment
     return String.format("|%s|", isFilled ? "^^^^" : "____");
   }
 
-  void fill()
+  boolean fill()
   {
-    isFilled = true;
+    return !isFilled ? isFilled = true : false;
   }
 
 }
