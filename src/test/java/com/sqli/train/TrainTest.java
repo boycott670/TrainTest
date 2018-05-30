@@ -5,6 +5,8 @@ import static org.junit.Assert.assertFalse;
 
 import org.junit.Test;
 
+import com.training.train.Train;
+
 /***************************
  * 
  * The aim of this exercise is to design and write a code to pass all tests.
